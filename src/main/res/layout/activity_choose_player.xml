@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoosePlayerActivity"
+    android:background="#001a4d">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Enter Player Names"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="#111032"
+        android:width="350dp"
+        android:hint="Player One"
+        android:textAlignment="center"
+        android:textColorHint="#80ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:drawableLeft="@drawable/zero"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/playertwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:height="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:background="#111032"
+        android:width="350dp"
+        android:drawableLeft="@drawable/close"
+        android:paddingLeft="10dp"
+        android:hint="Player Two"
+        android:textColorHint="#80ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/playerone"
+        app:layout_constraintStart_toStartOf="@+id/playerone"
+        app:layout_constraintTop_toBottomOf="@+id/playerone"
+        android:layout_gravity="center_horizontal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="Start Game"
+        android:layout_marginTop="50dp"
+        android:width="320dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/start_game_btn_background"
+        app:layout_constraintEnd_toEndOf="@+id/playertwo"
+        app:layout_constraintStart_toStartOf="@+id/playertwo"
+        app:layout_constraintTop_toBottomOf="@+id/playertwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".IntroductoryActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/singleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="280dp"
+            android:height="50dp"
+            android:background="@drawable/single_btn_back"
+            android:elevation="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Single Player"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:width="280dp"
+            android:height="50dp"
+            android:background="@drawable/multi_btn_back"
+            android:elevation="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Multi Player"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/singleBtn"
+            app:layout_constraintStart_toStartOf="@+id/singleBtn"
+            app:layout_constraintTop_toBottomOf="@+id/singleBtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:width="280dp"
+            android:height="50dp"
+            android:background="@drawable/exit_btn_back"
+            android:elevation="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Exit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/multiBtn"
+            app:layout_constraintStart_toStartOf="@+id/multiBtn"
+            app:layout_constraintTop_toBottomOf="@+id/multiBtn" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
